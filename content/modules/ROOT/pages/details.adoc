@@ -52,25 +52,29 @@ If any check fails, contact your facilitator before Module 1.
 * **Automation Portal**: link:{self_service_portal_url}[Open Automation Portal in a new tab^]
 * **OpenShift Console**: link:{openshift_console_url}[{openshift_console_url}^]
 
-**Users** (password for all listed users: `{aap_admin_password}`):
+**Users:**
 
 |===
-|Role |Username |Use in this workshop
+|Role |Username |Password |Use in this workshop
 
 |Administrator
 |`{aap_admin_username}`
+|`{aap_admin_password}`
 |AAP + portal configuration (Modules 1, 3-5)
 
 |Cloud team
 |`clouduser1`
+|`{aap_admin_password}`
 |Persona testing (Module 2)
 
 |Network team
 |`networkuser1`
+|`{aap_admin_password}`
 |Persona testing (Module 2); EE consumer path (Module 5)
 
 |RHEL team
 |`rheluser1`
+|`{aap_admin_password}`
 |Persona testing (Module 2)
 |===
 
@@ -80,12 +84,12 @@ Your AAP instance already includes domain inventories, credentials, projects, an
 
 [IMPORTANT]
 ====
-When switching users between AAP and Automation Portal:
-
-* Prefer **new-tab** links to the portal (GitHub OAuth in Module 5 cannot run reliably inside the Showroom iframe)
-* Between personas, **log out of both Ansible Automation Platform and Automation Portal** before signing in as the next user.
+* **Switching personas:** Log out of both Ansible Automation Platform and Automation Portal before signing in as the next user.
+* **Opening the portal (especially Module 5):** Use a **new browser tab** for portal links. GitHub OAuth cannot run reliably inside the Showroom iframe.
 ====
 
-== Authors
+== Authors & Feedback
 
-Developed by the Red Hat Technical Marketing team to demonstrate Automation Portal capabilities. Questions or feedback: ask your facilitator.
+Developed by the Red Hat Technical Marketing team to demonstrate Automation Portal capabilities.
+For questions or feedback ask your facilitator.
+To report workshop issues or bugs, please link:https://github.com/ansible/workshops/issues/new?title=Issue+with+portal+lab&assignees=amoyament[open an issue on GitHub^].
